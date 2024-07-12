@@ -1,10 +1,11 @@
-# This code only works for single bvalue shells. If you have multiple bvalue shells, you need to extract the single bval and run this code on each bvalue shell separately.
-# Example usage:
+# This code only works for a single bvalue shell. If you have multiple bvalue shells, you must extract the single bval and run this code on each bvalue separately.
+# Description:
 # imgPath is the DWI path of the higher angular resolution data.
 # maskPath is the mask of the DWI.
 # outPrefix is the prefix of the output files (we save the max bval of the input DWI as the bval of the output DWI, and we use the bvecs of the lower angular resolution DWI to get the bvecs of the output DWI, and DWI data is the resampled DWI data of the higher angular resolution).
 # imgLowerAngular is the DWI with lower angular resolution (we use this to get the bvals and bvecs of the lower angular resolution DWI).
 
+# Example usage:
 # resampleDWIgradients(
 #    imgPath="./testdata/HighAngularResData.nii.gz",
 #    maskPath="./testdata/mask.nii.gz",
